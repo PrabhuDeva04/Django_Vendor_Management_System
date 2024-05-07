@@ -3,6 +3,7 @@ This is a Vendor Management System (VMS) in Django is a software solution design
 This repository contains a Django project with a RESTful API using Django REST Framework.
 
 Requirements
+
 1.Python (version 3.x recommended)
 
 2.Django
@@ -10,36 +11,57 @@ Requirements
 3.Django REST Framework
 
 Setup Instructions
+
 1.Create a Virtual Environment in command prompt
+
 2.python -m venv venv
+
 3.venv\Scripts\activate
 
+
 Install Dependencies:
+
 1.pip install django
+
 2.pip install djangorestframework
 
+
 Set up a new project with a single application
-django-admin startproject vendor
-cd vendor
-django-admin startapp vendor_management
+
+1.django-admin startproject vendor
+
+2.cd vendor
+
+3.django-admin startapp vendor_management
+
 
 Database migration
+
 1.python manage.py makemigrations
+
 2.python manage.py migrate
 
+
 Superuser creation and Token generation
+
 1.python manage.py createsuperuser
 
+
 Running the server
+
 1.python manage.py runserver
 
+
 Access Django Admin:
+
 Open the Django admin at http://127.0.0.1:8000/admin/ and log in using the superuser credentials. this is to access the database as a admin user.
+
 Super User Credentials :
 UserName : PrabhuDeva
 Password : Vendor@123
 
 How to run a api endpoint?:
+
 First we need to make sure that we migrated the models to database
 then we need to start the server using "python manage.py runserver" command.
 then we need to open another cmd prompt and open virtual environment and open the project folder and provide curl or httpie commands.
