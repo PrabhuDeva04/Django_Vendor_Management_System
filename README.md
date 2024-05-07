@@ -4,7 +4,9 @@ This repository contains a Django project with a RESTful API using Django REST F
 
 Requirements
 1.Python (version 3.x recommended)
+
 2.Django
+
 3.Django REST Framework
 
 Setup Instructions
